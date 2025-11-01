@@ -1,45 +1,83 @@
-# BrainX
-An AI-powered learning platform that provides personalized learning paths and an intelligent chatbot to guide you as your learning partner.
-## 🔍 Project Output Screenshots
+BrainX Backend (MERN + Gemini API)
+
+This is the backend for BrainX, an intelligent e-learning platform with AI-powered guidance.
+It is built using Node.js, Express, MongoDB, and integrates with the Gemini API for additional functionality.
+
+⚙️ Tech Stack
+
+Node.js (v18+ recommended)
+
+Express.js
+
+MongoDB
+
+Mongoose (MongoDB ORM)
+
+Axios / Gemini API for external AI integration
+
+🚀 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/Swetha-Oruganti/BrainX-.git
+
+2️⃣ Navigate to the backend folder
+cd BrainX-/server
+
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Create environment variables
+
+Create a .env file in the server folder with the following keys:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_SECRET=your_gemini_api_secret
 
 
-### Login Page
-![Login Page](output_screenshots/s0.png)
+Replace with your actual MongoDB URI and Gemini API credentials.
+
+5️⃣ Run the server
+npm start
 
 
-### Home Page
+or for development with auto-reload:
 
-![Home Page](output_screenshots/s1.png)
-
-
----------------------------------------
-
-![Home Page](output_screenshots/s2.png)
+npm run dev
 
 
-### Dashboard
-![Dashboard](output_screenshots/s3.png)
+The server will start on:
 
+http://localhost:5000
 
----------------------------------------
+🧩 API Testing
 
+Use Postman or Insomnia to test APIs. Example endpoints:
 
-![Dashboard](output_screenshots/s4.png)
+GET /api/users
+POST /api/login
+POST /api/gemini/query
 
-### Courses
-![Courses](output_screenshots/s5.png)
+🛠️ Common Scripts
+Task	Command
+Start server	npm start
+Start dev server	npm run dev
+Install packages	npm install
+Test APIs	Use Postman / Insomnia
+📁 Folder Structure
+server/
+ ├── controllers/       # Route handlers
+ ├── models/            # Mongoose models
+ ├── routes/            # Express routes
+ ├── utils/             # Helper functions, Gemini API integration
+ ├── .env               # Environment variables
+ ├── package.json
+ └── server.js          # Main server entry
 
+🤝 Contributing
 
+Open issues or pull requests for bug fixes and improvements.
 
-### Learning path
-![Learning path](output_screenshots/s7.png)
+🧾 License
 
-
----------------------------------------
-
-
-![Learning path](output_screenshots/s8.png)
-
-
-### AI Chatbot
-![AI Chatbot](output_screenshots/s9.png)
+MIT License
